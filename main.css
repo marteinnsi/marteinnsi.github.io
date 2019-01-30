@@ -41,3 +41,10 @@ li a {
 li a::after {
     content: ' (open in new tab)';
 }
+
+.bottom-right {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: #b2b2b2;
+}
