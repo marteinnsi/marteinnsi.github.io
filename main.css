@@ -35,7 +35,6 @@ height: auto;
         line-height: 3em;
         text-decoration: none;
         text-align: center;
-        border-bottom: .3em solid var(--color-pink-two);
 
 }
 
@@ -225,6 +224,7 @@ body {
         .navbar-top a {
                 display: inline-block;
                 padding: 0 4em;
+                border-bottom: .3em solid var(--color-pink-two);
         }
 
 }
