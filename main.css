@@ -1,50 +1,234 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: sans-serif;
+*, *::before, *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        --color-pink-one: #E64398;
+        --color-pink-two: #F172A1;
+        --color-white: #F0EBF4;
+        --color-purple: #B39BC8;
+        --color-blue: #A1C3D1;
 }
+
+img {
+        max-width: 100%; 
+display:block; 
+height: auto;
+}
+
+/* Header -- global rules */
+.site-header {
+        padding: 3em 0;
+        text-align: center;
+        background-color: var(--color-pink-one);
+        color: var(--color-white);
+}
+
+/* Navbar -- global rules */
+.navbar-top {
+        background-color: var(--color-pink-one);
+}
+
+.navbar-top a {
+        display: block;
+        color: var(--color-white);
+        line-height: 3em;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: .3em solid var(--color-pink-two);
+
+}
+
+.navbar-top a:hover {
+        background-color: var(--color-pink-two);
+}
+
+/* Footer -- global rules */
+.footer-bottom {
+        background-color: var(--color-pink-one);
+        color: white;
+        text-align: center;
+        line-height: 3em;
+}
+
+/* Page content -- global rules */
+.site-content {
+        padding: 1em 2em;
+        margin: 0 auto;
+}
+
+/* Project list -- */
+.project-list {
+        list-style-type: none;
+}
+
+.project-list a {
+        background-color: var(--color-pink-two);
+        color: var(--color-white);
+        border: 2px solid var(--color-pink-one);
+        text-decoration: none;
+        display: block;
+        margin: 1em 0;
+        padding: .5em;
+}
+
+
+
+/* Grid setup -- site areas */
 
 body {
-    box-sizing: border-box;
+        display: grid;
+        height: 100vh;
 }
 
-html {
-    background-color: #333333;
+.navbar-top {
+        grid-area: navbar;
 }
 
-h1 {
-    text-align: center;
-    line-height: 3em;
-    color: #999;
+.site-header {
+        grid-area: header;
 }
 
-li {
-    list-style-type: none;
+.site-content {
+        grid-area: content;
+        display: grid;
+        width: 100%;
+        max-width: 85em;
 }
 
-li:nth-of-type(odd) {
-    background-color: #444444;
+.footer-bottom {
+        grid-area: footer;
 }
 
-li:nth-of-type(even) {
-    background-color: #494949;
+/* Grid setup -- content areas */
+.site-content aside:nth-of-type(1) {
+        grid-area: aside-1;
 }
 
-li a {
-    display: block;
-    padding: 2em;
-    color: #b2b2b2;
-    text-decoration: none;
+.site-content aside:nth-of-type(2) {
+        grid-area: aside-2;
 }
 
-li a::after {
-    content: ' (open in new tab)';
+.site-content article {
+        grid-area: article;
 }
 
-.bottom-right {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    color: #b2b2b2;
+/* Media queries -- page layouts */
+
+@media only screen and (min-width: 0){
+
+        body {
+                grid-template-areas: 
+                        "header"
+                        "content"
+                        "navbar"
+                        "footer";
+                grid-template-rows:
+                        auto
+                        1fr
+                        auto
+                        auto;
+        }
+
+        .site-content {
+                grid-template-areas: 
+                        "aside-1"
+                        "article"
+                        "aside-2";
+        }
+
+}
+
+@media only screen and (min-width: 30em) { /* allir skjair <= 40em fa tessar reglur */
+
+        body {
+                grid-template-areas: 
+                        "header"
+                        "content"
+                        "navbar"
+                        "footer";
+                grid-template-rows:
+                        auto
+                        1fr
+                        auto
+                        auto;
+        }
+
+        .site-content {
+                grid-template-areas: 
+                        "aside-1"
+                        "article"
+                        "aside-2";
+        }
+
+}
+
+@media only screen and (min-width:37.5em) { /* allir skjair <= 40em fa tessar reglur */
+        body {
+                grid-template-areas: 
+                        "header"
+                        "navbar"
+                        "content"
+                        "footer";
+                grid-template-rows:
+                        auto
+                        auto
+                        1fr
+                        auto;
+        }
+}
+
+@media only screen and (min-width: 48em) { /* allir skjair 40em-60em fa tessar reglur */
+        .site-content {
+                grid-template-areas:
+                        "aside-1 article"
+                        "aside-2 article"
+        }
+}
+
+@media only screen and (min-width: 60em) { /* allir skjair >=60em fa tessar reglur */
+        body {
+                grid-template-areas: 
+                        "header"
+                        "navbar"
+                        "content"
+                        "footer";
+                grid-template-rows:
+                        auto
+                        auto
+                        1fr
+                        auto;
+        }
+
+        .site-header {
+                text-align: left;
+                padding-left: 3em;
+        }
+
+        .site-content {
+                padding: 3em 1em;
+                grid-template-areas: 
+                        "aside-1 article aside-2";
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-gap: 2em;
+        }
+
+        .navbar-top {
+                padding-left: 1em;
+        }
+
+        .navbar-top li {
+                display: inline;
+        }
+        
+        .navbar-top a {
+                display: inline-block;
+                padding: 0 4em;
+        }
+
+}
+
+@media only screen and (min-width: 80em) {
+
 }
