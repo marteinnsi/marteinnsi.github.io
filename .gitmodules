@@ -13,3 +13,6 @@
 [submodule "verkefni-5"]
 	path = verkefni-5
 	url = https://github.com/marteinnsi/verkefni-5.git
+[submodule "verkefni-6"]
+	path = verkefni-6
+	url = https://github.com/marteinnsi/verkefni-6.git
