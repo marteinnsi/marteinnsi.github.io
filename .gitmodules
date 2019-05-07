@@ -16,3 +16,7 @@
 [submodule "verkefni-6"]
 	path = verkefni-6
 	url = https://github.com/marteinnsi/verkefni-6.git
+[submodule "verkefni-7"]
+	path = verkefni-7
+	url = https://github.com/marteinnsi/verkefni-7.git
+	branch = master
