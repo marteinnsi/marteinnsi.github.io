@@ -21,3 +21,6 @@
 | 3 | git branch   | List and manage branches |
 
 Þetta er notað til að t.d. skipta um "grein"/branch
+
+# 4. Hvað er útgáfustýring (Version Control)?
+Version control (útgáfustýring) er færslu kerfi þar sem hver breyting í kóða (færsla) er geymd og getur verið notuð og skoðuð seinna.
