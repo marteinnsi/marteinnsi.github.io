@@ -13,3 +13,11 @@
 | 2 | git status | View local repository changes                 |
 | 3 | git diff   | Show changes made in files since last commit  |
 
+# 3. Hvað gera eftirfarandi Git skipanir saman? Hvaða gagn er að þeirri aðgerð? 
+| # | command      | description              |
+|---|--------------|--------------------------|
+| 1 | git log      | Show commit log          |
+| 2 | git checkout | Checkout to a branch     |
+| 3 | git branch   | List and manage branches |
+
+Þetta er notað til að t.d. skipta um "grein"/branch
