@@ -33,3 +33,6 @@ Version control (útgáfustýring) er færslu kerfi þar sem hver breyting í k�
 
 # 6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
 Í hvert skipti sem þú gerir eitthvað í skjali og er ánægð(ur) en bara eftir að þú ert viss um að það virki.
+
+# 7. Hvað er átt við með “Working Directory”?” og “Staging Area” í GIT?
+Working directory er bara folderið þar sem .git (geymslan) er. Staging area er annað þrep þar sem öll 
