@@ -26,7 +26,10 @@
 Version control (útgáfustýring) er færslu kerfi þar sem hver breyting í kóða (færsla) er geymd og getur verið notuð og skoðuð seinna.
 
 # 5. Hverjir eru helstu kostir við að nota GIT?
-* Gamall kóði geymist að eilífu, þú getur í raun aldrei lent í því að eyða og svo tapa kóða svo lengi sem hann er til í gamalli (eða nýrri) færslu.
+* Gamall kóði og saga kóðans geymist að eilífu, þú getur í raun aldrei lent í því að eyða og svo tapa kóða svo lengi sem hann er til í gamalli (eða nýrri) færslu.
 * Auðvelt að sjá breytingar á kóða svo lengi sem þú tekur lítil skref og commitar oft.
 * Auðvelt fyrir aðra að śjá og hjálpa með kóðann þinn án þess að nota tölvuna þína.
 * Auðvelt fyrir þig og aðra að vinna á kóðanum þínum á mörgum tölvum.
+
+# 6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
+Í hvert skipti sem þú gerir eitthvað í skjali og er ánægð(ur) en bara eftir að þú ert viss um að það virki.
