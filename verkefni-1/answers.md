@@ -20,7 +20,13 @@
 | 2 | git checkout | Checkout to a branch     |
 | 3 | git branch   | List and manage branches |
 
-Þetta er notað til að t.d. skipta um "grein"/branch
+Þetta er notað til að t.d. skipta um "grein"/branch eða í annað commit.
 
 # 4. Hvað er útgáfustýring (Version Control)?
 Version control (útgáfustýring) er færslu kerfi þar sem hver breyting í kóða (færsla) er geymd og getur verið notuð og skoðuð seinna.
+
+# 5. Hverjir eru helstu kostir við að nota GIT?
+* Gamall kóði geymist af eilífu, þú getur í raun aldrei lent í því að eyða og svo tapa kóða svo lengi sem hann er til í gamalli (eða nýrri) færslu.
+* Auðvelt að sjá breytingar á kóða svo lengi sem þú tekur lítil skref og commitar oft.
+* Auðvelt fyrir aðra að śjá og hjálpa með kóðann þinn án þess að nota tölvuna þína.
+* Auðvelt fyrir þig og aðra að vinna á kóðanum þínum á mörgum tölvum.
