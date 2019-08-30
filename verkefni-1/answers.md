@@ -30,3 +30,6 @@ Version control (útgáfustýring) er færslu kerfi þar sem hver breyting í k�
 * Auðvelt að sjá breytingar á kóða svo lengi sem þú tekur lítil skref og commitar oft.
 * Auðvelt fyrir aðra að śjá og hjálpa með kóðann þinn án þess að nota tölvuna þína.
 * Auðvelt fyrir þig og aðra að vinna á kóðanum þínum á mörgum tölvum.
+
+Á nýju greininn minni get ég sagt mína skoðun á Git Umsjónarkerfinu…
+Mér finnst það sniðugt
